@@ -13,16 +13,19 @@
 <body>
     <div id="app">
         <nav class=" w-full top-0  absolute p-3">
-            <div class="bg-slate-100 rounded md:py-1">
+            <div class="bg-slate-100 rounded md:py-1 sticky top-0">
 
                 <!-- navbar -->
-                <div class="max-w-5xl mx-auto px-3 flex justify-between">
+                <div class="max-w-9xl mx-auto px-3 flex justify-between">
                     <!-- logo -->
                     <div
                         class="flex items-center space-x-1 transition ease-out hover:scale-110 active:bg-black active:text-white active:scale-100 rounded-lg p-3">
-                        <img src="./asset/id.jpg" class="w-6 h-6 rounded-full">
+                        <!-- <img src="./asset/id.jpg" class="w-6 h-6 rounded-full"> -->
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-700 to-sky-500 t">
+                            Z<sup>Z<sup>Z</sup></sup>
+                        </span>
                         <a href="#">
-                            <p class="font-medium">Eloquent</p>
+                            <p class="font-bold">Nap!</p>
                         </a>
                     </div>
 
@@ -80,10 +83,95 @@
         <main>
             <!-- hero section -->
             <section class="bg-no-repeat bg-cover" style="background-image: url('asset/images/image-6.jpg');">
+
                 <div
                     class="flex flex-col justify-center items-center h-screen space-y-2  bg-black bg-opacity-70 text-white">
-                    <h1 class="text-5xl md:text-8xl font-bold text-center">Take a nap!</h1>
+                    <h1 class="text-5xl md:text-8xl font-bold text-center">Take a Nap!</h1>
                     <h2 class="text-center">Chill! Because... why not?</h2>
+                </div>
+            </section>
+
+            <!-- benefits section -->
+            <section class="bg-sky-600 text-white p-20 flex-col space-y-10">
+                <!-- benefit header -->
+                <div class="flex flex-col items-center space-y-4">
+                    <h2 class="text-4xl font-medium">The world is such a mess!</h2>
+                    <p class="text-sky-200">Why don't you just wind down on the couch and get some of these <span
+                            class=" text-white">super nice
+                            benefits?</span></p>
+                </div>
+
+                <!-- benefits -->
+                <div class="flex flex-col md:flex-row justify-center items-center flex-wrap gap-16">
+
+                    <!-- Improved Daytime Sleepiness  -->
+                    <div class="flex flex-col items-center">
+                        <svg class="h-40 w-40 flex justify-center items-center" aria-hidden="true" fill="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
+                            </path>
+                        </svg>
+
+                        <span>Improved Daytime Sleepiness</span>
+                    </div>
+
+                    <!-- Enhanced Physical Performance  -->
+                    <div class="flex flex-col items-center">
+                        <svg class="h-40 w-40 flex justify-center items-center" aria-hidden="true" fill="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 12a.75.75 0 01-.75-.75v-7.5a.75.75 0 111.5 0v7.5A.75.75 0 016 12zM18 12a.75.75 0 01-.75-.75v-7.5a.75.75 0 011.5 0v7.5A.75.75 0 0118 12zM6.75 20.25v-1.5a.75.75 0 00-1.5 0v1.5a.75.75 0 001.5 0zM18.75 18.75v1.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 011.5 0zM12.75 5.25v-1.5a.75.75 0 00-1.5 0v1.5a.75.75 0 001.5 0zM12 21a.75.75 0 01-.75-.75v-7.5a.75.75 0 011.5 0v7.5A.75.75 0 0112 21zM3.75 15a2.25 2.25 0 104.5 0 2.25 2.25 0 00-4.5 0zM12 11.25a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zM15.75 15a2.25 2.25 0 104.5 0 2.25 2.25 0 00-4.5 0z">
+                            </path>
+                        </svg>
+                        <span>Enhanced Physical Performance</span>
+                    </div>
+
+                    <!-- Improved Thinking and Mood  -->
+                    <div class="flex flex-col items-center">
+                        <svg class="h-40 w-40 flex justify-center items-center" aria-hidden="true" fill="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                        <span>Improved Thinking and Mood</span>
+                    </div>
+
+                    <!-- Lower the risk of heart disease  -->
+                    <div class="flex flex-col items-center">
+                        <svg class="h-40 w-40 flex justify-center items-center" aria-hidden="true" fill="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                        <span>Lower the risk of heart disease</span>
+                    </div>
+
+                    <!-- Reduced Stress   -->
+                    <div class="flex flex-col items-center">
+                        <svg class="h-40 w-40 flex justify-center items-center" aria-hidden="true" fill="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                        <span>Reduced Stress </span>
+                    </div>
+
+                    <!-- Strengthened Immune System   -->
+                    <div class="flex flex-col items-center">
+                        <svg class="h-40 w-40 flex justify-center items-center" aria-hidden="true" fill="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                        <span>Strengthened Immune System </span>
+                    </div>
+
+
                 </div>
             </section>
 
