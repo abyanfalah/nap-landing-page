@@ -13,14 +13,14 @@
 <body>
     <div id="app">
         <!-- navbar. obviously -->
-        <nav class=" w-full top-0  sticky p-3">
+        <nav class=" w-full top-0 fixed p-3 z-50">
             <div class="bg-slate-100 rounded md:py-1 shadow-lg">
 
                 <!-- navbar -->
-                <div class="max-w-9xl mx-auto px-3 flex justify-between">
+                <div class="max-w-9xl mx-auto px-3 py-2 md:py-0 flex justify-between">
                     <!-- logo -->
                     <div
-                        class="flex items-center space-x-1 transition ease-out hover:scale-110 active:bg-black active:text-white active:scale-100 rounded-lg p-3">
+                        class="flex items-center space-x-1 transition ease-out hover:scale-110 active:bg-black active:text-white active:scale-100 rounded-lg p-1 px-3 md:p-3">
                         <!-- <img src="./asset/id.jpg" class="w-6 h-6 rounded-full"> -->
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-700 to-sky-500 t">
                             Z<sup>Z<sup>Z</sup></sup>
@@ -31,7 +31,7 @@
                     </div>
 
                     <!-- navigation -->
-                    <div class="hidden md:flex items-center space-x-1">
+                    <div class="hidden md:flex items-center space-x-1 text-gray-950">
                         <a class="hover:bg-slate-300 px-3 py-2 rounded transition ease-out active:bg-slate-400 active:scale-95"
                             href="#home">Home</a>
                         <a class="hover:bg-slate-300 px-3 py-2 rounded transition ease-out active:bg-slate-400 active:scale-95"
@@ -63,19 +63,19 @@
                 </div>
 
                 <!-- mobile menu -->
-                <!-- <Transition> -->
                 <div v-if="mobileMenu" class="w-full bg-inherit md:hidden px-3 py-3 rounded-b">
-                    <a class="block transition ease-out hover:bg-slate-300 p-2 rounded" href="#home">Home</a>
-                    <a class="block transition ease-out hover:bg-slate-300 p-2 rounded" href="#pricing">Pricing</a>
-                    <a class="block transition ease-out hover:bg-slate-300 p-2 rounded" href="#about">About</a>
-                    <a class="block transition ease-out hover:bg-slate-300 p-2 rounded" href="#about">Login</a>
-                    <a class="block transition ease-out hover:bg-sky-500 hover:text-white p-2 rounded"
+                    <a class="block transition ease-out hover:bg-slate-300 active:bg-slate-400 p-2 rounded"
+                        href="#home">Home</a>
+                    <a class="block transition ease-out hover:bg-slate-300 active:bg-slate-400 p-2 rounded"
+                        href="#pricing">Pricing</a>
+                    <a class="block transition ease-out hover:bg-slate-300 active:bg-slate-400 p-2 rounded"
+                        href="#about">About</a>
+                    <a class="block transition ease-out hover:bg-slate-300 active:bg-slate-400 p-2 rounded"
+                        href="#about">Login</a>
+                    <a class="block mt-1 transition ease-out bg-sky-500 hover:bg-sky-600 active:bg-sky-700 text-white p-2 rounded"
                         href="#signup">Sign
                         up</a>
                 </div>
-                <!-- </Transition> -->
-
-
             </div>
 
 
@@ -359,6 +359,85 @@
 
         </main>
 
+
+        <footer class="bg-gray-800 text-slate-700 p-20 flex flex-col space-y-4 lg:flex-row md:justify-evenly text-sm">
+            <!-- Logo -->
+            <div class="text-slate-300">
+                <div class="flex space-x-2 text-3xl">
+                    <span>
+                        Z<sup>Z<sup>Z</sup></sup>
+                    </span>
+                    <a href="#">
+                        <p class="font-bold">Nap!</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- FAQ and help -->
+            <div class="flex flex-col space-y-2">
+                <p class="text-slate-500">Nap!</p>
+                <div>
+                    <a href="#help" class="block hover:text-slate-600 ">Help</a>
+                    <a href="#faq" class="block hover:text-slate-600  ">FAQ</a>
+                </div>
+            </div>
+
+            <!-- Product -->
+            <div class="flex flex-col space-y-2">
+                <p class="text-slate-500">PRODUCTS</p>
+                <div>
+                    <a href="#teams" class="block hover:text-slate-600">Teams</a>
+                    <a href="#advertising" class="block hover:text-slate-600">Advertising</a>
+                    <a href="#collectives" class="block hover:text-slate-600">Collectives</a>
+                    <a href="#talents" class="block hover:text-slate-600">Talents</a>
+
+                </div>
+            </div>
+
+            <!-- Company -->
+            <div class="flex flex-col space-y-2">
+                <p class="text-slate-500">COMPANY</p>
+                <div>
+                    <a href="#about" class="block hover:text-slate-600">About</a>
+                    <a href="#press" class="block hover:text-slate-600">Press</a>
+                    <a href="#work-here" class="block hover:text-slate-600">Work Here</a>
+                    <a href="#legal" class="block hover:text-slate-600">Legal</a>
+                    <a href="#privacy-policy" class="block hover:text-slate-600">Privacy Policy</a>
+                    <a href="#terms-of-service" class="block hover:text-slate-600">Terms of Service</a>
+                    <a href="#contact-us" class="block hover:text-slate-600">Contact Us</a>
+                    <a href="#cookie-settings" class="block hover:text-slate-600">Cookie Settings</a>
+                    <a href="#cookie-policy" class="block hover:text-slate-600">Cookie Policy</a>
+
+                </div>
+            </div>
+
+            <!-- Network -->
+            <div class="flex flex-col space-y-2">
+                <p class="text-slate-500">Nap! NETWORK</p>
+                <div>
+                    <a href="#technology" class="block hover:text-slate-600">Technology</a>
+                    <a href="#culture-recreation" class="block hover:text-slate-600">Culture & Recreation</a>
+                    <a href="#life-arts" class="block hover:text-slate-600">Life & Arts</a>
+                    <a href="#science" class="block hover:text-slate-600">Science</a>
+                    <a href="#professional" class="block hover:text-slate-600">Professional</a>
+                    <a href="#business" class="block hover:text-slate-600">Business</a>
+                    <div class="my-4"></div>
+                    <a href="#api" class="block hover:text-slate-600">API</a>
+                    <a href="#data" class="block hover:text-slate-600">Data</a>
+                </div>
+            </div>
+
+            <!-- social media -->
+            <div class="flex space-x-4">
+                <a href="#blog" class="block hover:text-slate-600">Blog</a>
+                <a href="#facebook" class="block hover:text-slate-600">Facebook</a>
+                <a href="#twitter" class="block hover:text-slate-600">Twitter</a>
+                <a href="#linkedin" class="block hover:text-slate-600">LinkedIn</a>
+                <a href="#instagram" class="block hover:text-slate-600">Instagram</a>
+
+            </div>
+
+        </footer>
     </div>
 
     <script src="script.js"></script>
