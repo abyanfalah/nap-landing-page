@@ -14,3 +14,7 @@
     opacity: 0;
     /* height: 0px; */
 }
+
+html {
+    scroll-behavior: smooth;
+}
